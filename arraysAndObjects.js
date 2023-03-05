@@ -25,3 +25,46 @@ function filterItem(item) {
     return item !== 5;
 }
 console.log(arr.filter(filterItem))
+
+
+const book = {
+    title: "Война и мир",
+    author: {
+        name: "Лев Толстой",
+        birthYear: 1828
+    },
+    pageCount: 1234,
+    isFinished: true,
+};
+console.log(book);
+console.log(book['title']);
+book.pageCount++;
+console.log(book.pageCount);
+console.log(book.author.name);
+
+const jsonTest = {
+  "a": 1,
+  "b": 2,
+  "c": [1,2,3,4]
+};
+console.log(jsonTest);
+
+const jsonStr = '{"a": 1, "b": 2, "c": [1,2,3,4]}';
+const dataFromJson = JSON.parse(jsonStr);
+console.log('dataFromJson', dataFromJson);
+console.log(dataFromJson == jsonTest);
+console.log(JSON.stringify(dataFromJson));
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+console.log('-------')
+for (let item of arr) {
+    console.log(item);
+}
+for (let idx in arr) {
+    console.log(idx);
+}
+arr.forEach(function (item) {
+    console.log(item, 'from forEach');
+})
