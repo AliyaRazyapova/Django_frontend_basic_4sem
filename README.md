@@ -1,1 +1,1 @@
-# Django_lessons_4sem
+# Django_frontend_basic_4sem
