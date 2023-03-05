@@ -18,3 +18,31 @@ console.log(str.indexOf("a"));
 console.log("Still string");
 console.log(`still string ${str} ${a}`);
 console.log(typeof "str");
+
+const num = 4;
+const num2 = 4.5;
+console.log(4 + 5, num + num2);
+console.log(
+    parseInt('1') + 2, '2' - 1
+);
+
+const bool = false;
+const bool2 = true;
+if (bool) {
+    console.log("bool = true");
+}
+else if (bool2) {
+    console.log("bool2 = true");
+}
+else {
+    console.log("все переменные врут");
+}
+
+let name;
+console.log(typeof name, name);
+
+let test = "2";
+console.log('==', test == 2);
+console.log('===', test === 2);
+console.log('OR', test == 2 || test === 2);
+console.log('AND', test == 2 && test === 2);
