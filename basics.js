@@ -47,12 +47,15 @@ console.log('===', test === 2);
 console.log('OR', test == 2 || test === 2);
 console.log('AND', test == 2 && test === 2);
 
-const direction = 'down';
+const inputStr = 'down 2';
+const commands = inputStr.split(' ');
+const direction = commands[0];
 switch (direction) {
     case "up":
         console.log("going up");
         break;
     case "down":
+        console.log(commands[1])
         console.log("going down");
         break;
     default:
