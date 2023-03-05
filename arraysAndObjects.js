@@ -68,3 +68,9 @@ for (let idx in arr) {
 arr.forEach(function (item) {
     console.log(item, 'from forEach');
 })
+
+let counter = 0;
+while (counter < arr.length) {
+    console.log(arr[counter]);
+    counter++;
+}

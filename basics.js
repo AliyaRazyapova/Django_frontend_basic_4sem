@@ -46,3 +46,16 @@ console.log('==', test == 2);
 console.log('===', test === 2);
 console.log('OR', test == 2 || test === 2);
 console.log('AND', test == 2 && test === 2);
+
+const direction = 'down';
+switch (direction) {
+    case "up":
+        console.log("going up");
+        break;
+    case "down":
+        console.log("going down");
+        break;
+    default:
+        console.log("we don't know the direction");
+        break;
+}
