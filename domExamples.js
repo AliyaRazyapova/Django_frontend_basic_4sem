@@ -13,4 +13,11 @@ window.addEventListener("DOMContentLoaded", () => {
         const textAsStr = textParts.slice(0, endPosition).join(" ")
         header.innerText = `${textAsStr} ${number}`;
     });
+    
+    console.log(document.querySelector("p.paragraph"));
+    console.log(document.querySelector("#results"));
+    document.querySelector("#results").innerHTML = 'результаты!';
+
+    console.log(document.querySelector("p a"));
+    console.log(document.querySelectorAll("p"));
 });
