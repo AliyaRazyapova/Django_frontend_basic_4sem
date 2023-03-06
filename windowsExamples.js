@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log('content loaded');
     document.querySelector("#windowOpenButton").addEventListener("click", function () {
         const win = window.open('https://ya.ru');
         console.log(win);
@@ -17,3 +18,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+console.log("js started")
