@@ -3,4 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const win = window.open('https://ya.ru');
         console.log(win);
     });
+    document.querySelector("#windowPrintButton").addEventListener("click", function () {
+        window.print();
+    });
 })
