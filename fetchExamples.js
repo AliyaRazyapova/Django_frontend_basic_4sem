@@ -16,7 +16,15 @@ async function formHandler(event) {
     }    
     console.log("123");
 }
+
+async function corsTest() {
+    const result = await fetch("http://localhost:8000/api/")
+    const data = await result.json();
+    console.log(data);
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("#githubForm");
     form.addEventListener("submit", formHandler);
+    corsTest();
 })
